@@ -44,10 +44,10 @@ const checkAdminTeacherOrStudent = (req, res, next) => {
     });
 };
 
-resultRouter.post('/', addResult);
-resultRouter.get('/:studentId', getResult);
-resultRouter.get('/', getResult);
-resultRouter.put('/:id', updateResult);
-resultRouter.delete('/:id', deleteResult);
+resultRouter.post('/', checkAdminOrTeacher, addResult);
+resultRouter.get('/:studentId',checkAdminTeacherOrStudent, getResult);
+resultRouter.get('/',checkAdminTeacherOrStudent, getResult);
+resultRouter.put('/:id',checkAdminOrTeacher, updateResult);
+resultRouter.delete('/:id',checkAdminOrTeacher, deleteResult);
 
 export default resultRouter;
