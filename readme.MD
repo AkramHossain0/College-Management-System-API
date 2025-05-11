@@ -133,8 +133,7 @@ The College Management System API is built with **Node.js** and **Express.js**, 
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
-   cd college-management-system
+   git clone https://github.com/AkramHossain0/College-Management-System-API.git
    ```
 
 2. **Install dependencies**
