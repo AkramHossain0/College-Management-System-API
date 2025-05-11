@@ -2,6 +2,7 @@ import express from 'express';
 import {getDashboardData} from '../controllers/dashboard.js';
 import checkTeacher from '../middleware/checkTeacher.js';
 import checkStudent from '../middleware/checkStudent.js';
+import checkAdmin from '../middleware/checkAdmin.js';
 
 const dashboardRouter = express.Router();
 
